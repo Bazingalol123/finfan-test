@@ -6,7 +6,7 @@ import axios from "axios"
 function App() {
   const [count, setCount] = useState(0)
   const [facts, setFacts] = useState("")
-
+  
   const fetchFacts = async() => {
     try {
       const facts = await axios.get('https://catfact.ninja/fact')
